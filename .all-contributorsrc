@@ -1,0 +1,23 @@
+{
+  "projectName": "capacitor-metadata-config",
+  "projectOwner": "Nitish Sachar",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "commitConvention": "none",
+  "contributors": [{
+      "login": "uioporqwerty",
+      "name": "Nitish Sachar",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4053751?v=4",
+      "profile": "https://github.com/uioporqwerty",
+      "contributions": [
+        "maintenance",
+        "code"
+      ]
+    }],
+  "contributorsPerLine": 7
+}

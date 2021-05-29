@@ -1,0 +1,34 @@
+on:
+  push:
+    branches: [main]
+    tags:
+      - '*'
+name: Plugin-CI
+jobs:
+  build_publish:
+    name: Build and Publish
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Set env
+        if: startsWith( github.ref, 'refs/tags/')
+        run: echo "RELEASE_VERSION=${GITHUB_REF#refs/*/}" >> $GITHUB_ENV
+
+      - name: Set npm version
+        if: startsWith( github.ref, 'refs/tags/')
+        run: |
+          git config --global user.email "nitish.sachar@pm.me"
+          git config --global user.name "Nitish Sachar"
+          npm version $RELEASE_VERSION --allow-same-version
+
+      - name: Install NPM Dependencies
+        run: npm install
+
+      - name: Build NPM Module
+        run: npm run build
+
+      - uses: JS-DevTools/npm-publish@v1
+        if: startsWith( github.ref, 'refs/tags/')
+        with:
+          token: ${{ secrets.NPM_TOKEN }}
