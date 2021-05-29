@@ -1,18 +1,19 @@
 import Foundation
 import Capacitor
 
-/**
- * Please read the Capacitor iOS Plugin Development Guide
- * here: https://capacitorjs.com/docs/plugins/ios
- */
 @objc(MetadataConfigPlugin)
 public class MetadataConfigPlugin: CAPPlugin {
     private let implementation = MetadataConfig()
 
-    @objc func echo(_ call: CAPPluginCall) {
-        let value = call.getString("value") ?? ""
+    @objc func read(_ call: CAPPluginCall) {
+        let key = call.getString("key") ?? ""
+        
+        let value = implementation.read(key)
+        if (value == nil) {
+            call.reject("value for \(key) not found. Did you add the key/value to Info.plist?")
+        }
         call.resolve([
-            "value": implementation.echo(value)
+            "value": value!
         ])
     }
 }
