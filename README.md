@@ -32,9 +32,26 @@ npx cap sync
 ```
 
 ## Configuration
+There is no configuration required to setup this plugin. However, if you have custom key value pairs for a platform you'd like to read, the per platform instructions are as follows:
+
+Android:
+In `<application>` of `AndroidManifest.xml` add a `<meta-data android:name="myCustomKey" android:value="your-value"></meta-data>`.
+
+iOS:
+In `Info.plist` add your custom entry: `<key>myCustomKey</key><string>your-value</string>`.
 
 ## Usage
 
+See the Metadata Config page in the following repo:
+
+https://github.com/uioporqwerty/capacitor-testapp
+
+tldr;
+```
+import { MetadataConfig } from 'capacitor-metadata-config'
+
+const { value } = await MetadataConfig.read({ key: 'myCustomKey' })
+```
 ## Contributors ✨
 
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
