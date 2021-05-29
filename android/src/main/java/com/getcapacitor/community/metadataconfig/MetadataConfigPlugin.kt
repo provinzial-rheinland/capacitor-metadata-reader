@@ -15,9 +15,6 @@ class MetadataConfigPlugin : Plugin() {
 
         val ret = JSObject()
         val value = implementation.read(context, key!!)
-        if (value == null) {
-            call.reject("value for key $key not found. Did you add it to AndroidManifest.xml?")
-        }
         ret.put("value", value)
         call.resolve(ret)
     }
