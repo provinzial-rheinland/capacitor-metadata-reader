@@ -1,6 +1,6 @@
 {
   "name": "capacitor-metadata-reader",
-  "version": "0.0.1",
+  "version": "1.0.3",
   "description": "Capacitor plugin to read custom settings from AndroidManifest.xml and Info.plist",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
@@ -13,11 +13,11 @@
     "ios/Plugin/",
     "CapacitorMetadataReader.podspec"
   ],
-  "author": "Nitish Sachar",
+  "author": "S-Direkt-Developer",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/uioporqwerty/capacitor-metadata-reader.git"
+    "url": "git+https://github.com/provinzial-rheinland/capacitor-metadata-reader"
   },
   "keywords": [
     "capacitor",
@@ -60,7 +60,7 @@
     "@typescript-eslint/parser": "4.28.4"
   },
   "peerDependencies": {
-    "@capacitor/core": "4.1.0"
+    "@capacitor/core": "3.7.0"
   },
   "capacitor": {
     "ios": {
