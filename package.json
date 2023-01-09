@@ -43,10 +43,10 @@
     "contributors:generate": "all-contributors generate"
   },
   "devDependencies": {
-    "@capacitor/android": "3.7.0",
-    "@capacitor/core": "3.7.0",
+    "@capacitor/android": "^4.0.0",
+    "@capacitor/core": "^4.0.0",
     "@capacitor/docgen": "0.2.0",
-    "@capacitor/ios": "3.7.0",
+    "@capacitor/ios": "^4.0.0",
     "eslint-config-prettier": "8.3.0",
     "eslint-plugin-react": "7.24.0",
     "prettier": "2.6.0",
@@ -60,7 +60,7 @@
     "@typescript-eslint/parser": "4.28.4"
   },
   "peerDependencies": {
-    "@capacitor/core": "3.7.0"
+    "@capacitor/core": "^4.0.0"
   },
   "capacitor": {
     "ios": {
