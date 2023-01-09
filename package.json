@@ -17,7 +17,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/provinzial-rheinland/capacitor-metadata-reader"
+    "url": "git+https://github.com/sdirekt-app-developer/capacitor-metadata-reader"
   },
   "keywords": [
     "capacitor",
