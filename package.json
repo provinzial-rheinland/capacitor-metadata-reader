@@ -1,6 +1,6 @@
 {
   "name": "capacitor-metadata-reader",
-  "version": "1.0.3",
+  "version": "5.0.0",
   "description": "Capacitor plugin to read custom settings from AndroidManifest.xml and Info.plist",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
@@ -43,24 +43,24 @@
     "contributors:generate": "all-contributors generate"
   },
   "devDependencies": {
-    "@capacitor/android": "3.7.0",
-    "@capacitor/core": "3.7.0",
-    "@capacitor/docgen": "0.2.0",
-    "@capacitor/ios": "3.7.0",
-    "eslint-config-prettier": "8.3.0",
-    "eslint-plugin-react": "7.24.0",
-    "prettier": "2.6.0",
-    "prettier-plugin-java": "1.6.2",
-    "rimraf": "3.0.2",
-    "rollup": "2.78.0",
-    "swiftlint": "1.0.1",
-    "typescript": "4.3.5",
-    "all-contributors-cli": "6.20.0",
-    "@typescript-eslint/eslint-plugin": "4.28.4",
-    "@typescript-eslint/parser": "4.28.4"
+    "@capacitor/android": "^5.0.0",
+    "@capacitor/core": "^5.0.0",
+    "@capacitor/docgen": "^0.2.0",
+    "@capacitor/ios": "^5.0.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-react": "^7.24.0",
+    "prettier": "^2.6.0",
+    "prettier-plugin-java": "^1.6.2",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.78.0",
+    "swiftlint": "^1.0.1",
+    "typescript": "^4.3.5",
+    "all-contributors-cli": "^6.20.0",
+    "@typescript-eslint/eslint-plugin": "^4.28.4",
+    "@typescript-eslint/parser": "^4.28.4"
   },
   "peerDependencies": {
-    "@capacitor/core": "3.7.0"
+    "@capacitor/core": "^5.0.0"
   },
   "capacitor": {
     "ios": {
