@@ -1,8 +1,7 @@
 {
   "name": "capacitor-metadata-reader",
-  "version": "6.0.0",
+  "version": "6.0.1",
   "description": "Capacitor plugin to read custom settings from AndroidManifest.xml and Info.plist",
-  "type": "module",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
   "types": "dist/esm/index.d.ts",
