@@ -18,8 +18,7 @@
     },
     "extends": [
         "plugin:@typescript-eslint/recommended",
-        "eslint:recommended",
-        "react-app"
+        "eslint:recommended"
     ],
     "plugins": [
         "@typescript-eslint",
